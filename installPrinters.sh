@@ -13,7 +13,7 @@ echo "umounting the DMG"
   status=$?
     if [ $status != 0 ]
     then
-        echo "Something went wront unmounting the server... no problem... we'll just remove the directory"
+        echo "DMG Unmount failed. Removing Directory"
         rmdir /Volumes/MX-C52
     fi
 echo "Cleaning up"
@@ -32,7 +32,7 @@ echo "umounting the DMG"
   status=$?
     if [ $status != 0 ]
     then
-        echo "Something went wront unmounting the server... no problem... we'll just remove the directory"
+        echo "DMG Unmount failed. Removing Directory"
         rmdir /Volumes/MX-C26
     fi
 echo "Cleaning up"
@@ -51,7 +51,7 @@ echo "umounting the DMG"
   status=$?
     if [ $status != 0 ]
     then
-        echo "Something went wront unmounting the server... no problem... we'll just remove the directory"
+        echo "DMG Unmount failed. Removing Directory"
         rmdir /Volumes/Lexmark_AEP_Printer\ Software\ v\ 2.0.0/
     fi
 echo "Cleaning up"
