@@ -68,4 +68,5 @@ echo "Cleaning up"
 echo "Cleaning up"
 
 brew cleanup --force
+brew cask cleanup
 rm -f -r /Library/Caches/Homebrew/*
