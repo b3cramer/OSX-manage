@@ -15,6 +15,7 @@ brew cask install --appdir="~/Applications" vlc
 brew cask install --appdir="~/Applications" java
 brew cask install flash-npapi
 brew cask install flash-player
+brew install mas
 
 # Google Applications
 echo "Install Google Apps | Chrome not included cause of 1Password Plugin"
