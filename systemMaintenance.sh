@@ -16,6 +16,6 @@ brew missing
 
 #now check app store updates
 echo "Checking for outdated applications in the App Store..."
-mas outdated
+mas upgrade
 
 echo "Your system is all updated and cleaned up!"
