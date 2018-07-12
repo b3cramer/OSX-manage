@@ -2,6 +2,8 @@
 read -p "Press any key to continue... " -n1 -s
 echo  '\n'
 
+echo "Checking for Applications: Chrome and Firefox..."
+./removeApplicationsList.sh
 
 #Install wget
 echo "Homebrew Cask install applications..."
