@@ -34,7 +34,7 @@ echo "Installing MX-C52 driver for Sharp 4070 MFP"
 echo "mounting DMG"
   hdiutil attach MX-C52_1804a_Mac104-1013.dmg
   cd /Volumes/MX-C52/MacOSX/Version\ 10.9
-  sudo installer -pkg MX-C52.pkg -target "/"
+  sudo installer -pkg MX-C52.pkg -target "/" -allowUntrusted
 echo "umounting the DMG"
   cd ~
   diskutil umount /Volumes/MX-C52
@@ -53,7 +53,7 @@ echo "Installing MX-C52 for Sharp 565 MFP"
 echo "mounting DMG"
   hdiutil attach MX-C26_1711a_Mac104-1012.dmg
   cd /Volumes/MX-C26/MacOSX/Version\ 10.10
-  sudo installer -pkg MX-C26.pkg -target "/"
+  sudo installer -pkg MX-C26.pkg -target "/" -allowUntrusted
 echo "umounting the DMG"
   cd ~
   diskutil umount /Volumes/MX-C26
@@ -70,5 +70,4 @@ echo "Cleaning up"
 echo "Cleaning up"
 
 brew cleanup --force
-brew cask cleanup
 rm -f -r /Library/Caches/Homebrew/*
