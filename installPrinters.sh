@@ -6,7 +6,7 @@ echo "Installing MX-C52 driver for Sharp 4070 MFP"
 echo "mounting DMG"
   hdiutil attach MX-C52_1804a_Mac104-1013.dmg
   cd /Volumes/MX-C52/MacOSX/Version\ 10.9
-  sudo installer -pkg MX-C52.pkg -target "/"
+  sudo installer -pkg MX-C52.pkg -target "/" -allowUntrusted
 echo "umounting the DMG"
   cd ~
   diskutil umount /Volumes/MX-C52
@@ -25,7 +25,8 @@ echo "Installing MX-C52 for Sharp 565 MFP"
 echo "mounting DMG"
   hdiutil attach MX-C26_1711a_Mac104-1012.dmg
   cd /Volumes/MX-C26/MacOSX/Version\ 10.10
-  sudo installer -pkg MX-C26.pkg -target "/"
+  sudo installer -pkg MX-C26.pkg -target "/" -allowUntrusted
+
 echo "umounting the DMG"
   cd ~
   diskutil umount /Volumes/MX-C26
@@ -44,7 +45,7 @@ echo "Installing Lexmark_AEP_PrinterSoftware_04032017 driver for Lexmark C6160"
 echo "mounting DMG"
   hdiutil attach Lexmark_AEP_PrinterSoftware_04032017.dmg
   cd /Volumes/Lexmark_AEP_Printer\ Software\ v\ 2.0.0/
-  sudo installer -pkg C6100_Series_Print.pkg -target "/"
+  sudo installer -pkg C6100_Series_Print.pkg -target "/" -allowUntrusted
 echo "umounting the DMG"
   cd ~
   diskutil umount /Volumes/Lexmark_AEP_Printer\ Software\ v\ 2.0.0/
