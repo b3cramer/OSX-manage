@@ -1,6 +1,7 @@
 #!/bin/sh
-read -p "Press any key to continue... " -n1 -s
-echo  '\n'
+#Silent install Homebrew - Requires pw.sh be stored in /User/$USER/bin with 100 permissions
+CI=1 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 
 echo "Checking for Applications: Chrome and Firefox..."
 ./removeApplicationsList.sh
