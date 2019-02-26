@@ -10,4 +10,3 @@ cat <<-EOF > /opt/jc/agentBootstrap.json
 }
 EOF
 installer -pkg /tmp/jumpcloud-agent.pkg -target /
-
