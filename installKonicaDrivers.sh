@@ -23,7 +23,7 @@ echo "Installing Drivers for K-M_808"
   status=$?
     if [ $status != 0 ]
     then
-        echo "Installation of 808e failed. Deleting .PKG file"
+        echo "Installation of 808e Driver failed. Deleting .PKG file"
         rm 958_658e_558_368_367_109.pkg
     fi
 
