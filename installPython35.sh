@@ -1,21 +1,20 @@
 #!/bin/bash
 
-callSudo() {
-	sudo -S -v <<< 'Carbonsteel44%' 2> /dev/null
-	while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
-}
+#Run with global admin acocunt from JC on managed systems
 
 installPython() {
 
+mkdir /tmp/python && cd /tmp/python
 curl https://www.python.org/ftp/python/3.5.4/python-3.5.4-macosx10.6.pkg -o python35.pkg
 
-sudo installer -pkg python35.pkg -target /
+sudo installer -allowUntrusted -pkg python35.pkg -target /
 
 echo "cleaning up..."
-rm -R python35.pkg
+cd ~
+rm -Rf /tmp/python
 
-echo "All done."
+echo "The snakes are ready to slither..."
 }
 
-callSudo
+
 installPython
