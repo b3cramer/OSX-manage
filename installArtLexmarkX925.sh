@@ -4,7 +4,7 @@ echo "Installing driver for Lexmark X925"
 echo "mounting DMG"
   hdiutil attach Lexmark_ADB_PrinterSoftware_12152016.dmg
   cd /Volumes/Lexmark_ADB_Printer\ Software\ v\ 2.0.0/
-  sudo installer -pkg X920_Series_Print_Scan.pkg -target "/"
+  sudo installer -allowUntrusted -pkg X920_Series_Print_Scan.pkg -target "/"
 echo "umounting the DMG"
   cd ~
   diskutil umount /Volumes/Lexmark_ADB_Printer\ Software\ v\ 2.0.0/
