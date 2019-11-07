@@ -6,12 +6,7 @@ callSudo() {
 	while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 }
 
-brewInstall() {
-  brew install wget
-  brew tap caskroom/cask
-}
-
-brewCaskInstall() {
+brewCaskInstallSketchup() {
   export RED='\033[0;31m'
   export NC='\033[0m'
 
@@ -30,19 +25,7 @@ brewCaskInstall() {
         echo "${RED}cask "$item" failed to install${NC}"
       fi
     done
-
-  echo "install Flash plugins..."
-    for item in "${casksFlash[@]}"
-    do
-      brew cask install "$item"
-      status=$?
-      if [ $status != 0 ]
-      then
-        echo "${RED}cask "$item" failed to install${NC}"
-      fi
-    done
 }
 
 callSudo
-#brewInstall
-brewCaskInstall
+brewCaskInstallSketchup
