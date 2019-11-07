@@ -6,13 +6,10 @@ callSudo() {
 }
 
 installPicasa39() {
-
-hdiutil mount picasamac39.dmg && sudo cp -R "/Volumes/Picasa 3.9.138" /Applications
-
-echo "cleaning up..."
-rm -R picasamac39.dmg
-
-echo "All done."
+	hdiutil mount picasamac39.dmg && sudo cp -R "/Volumes/Picasa 3.9.138" /Applications
+		echo "cleaning up..."
+	rm -R picasamac39.dmg
+		echo "All done."
 }
 
 callSudo
